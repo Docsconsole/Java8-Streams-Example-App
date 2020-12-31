@@ -7,8 +7,10 @@ public class StreamsExample {
     public static void main(String[] args) {
 
         //display the even numbers from a list
-        Arrays.asList(100, 200,201, 302, 403,505)
-                .stream().filter(s ->{ return s % 2 == 0;}).collect(Collectors.toList())
+        Arrays.asList(100, 200, 201, 302, 403, 505)
+                .stream().filter(s -> {
+            return s % 2 == 0;
+        }).collect(Collectors.toList())
                 .forEach(System.out::println);
 
 

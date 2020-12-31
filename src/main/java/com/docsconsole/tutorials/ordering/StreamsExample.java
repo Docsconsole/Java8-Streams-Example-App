@@ -52,8 +52,8 @@ public class StreamsExample {
                 .forEach(s->{
                     System.out.println("forEach: " + s);
                 });*/
-        Stream.of("a1","bb2", "ccc3", "cccc4", "eeeee5", "eeeeee6")
-                .filter(s->{
+        Stream.of("a1", "bb2", "ccc3", "cccc4", "eeeee5", "eeeeee6")
+                .filter(s -> {
                     System.out.println("filter: " + s);
                     return s.startsWith("C");
                 })
@@ -66,7 +66,7 @@ public class StreamsExample {
                     return s.toUpperCase();
                 })
 
-                .forEach(s->{
+                .forEach(s -> {
                     System.out.println("forEach: " + s);
                 });
 
